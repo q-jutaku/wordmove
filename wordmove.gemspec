@@ -35,6 +35,8 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "kwalify", "~> 0"
   spec.add_runtime_dependency "photocopier", "~> 1.4", ">= 1.4.0"
   spec.add_runtime_dependency "thor", "~> 0.20.3"
+  # fix OpenSSH alg mismatch problem
+  spec.add_runtime_dependency "net-ssh", "7.2.0"
 
   spec.required_ruby_version = ">= 2.6.0"
 
@@ -45,8 +47,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rspec", "~> 3.9"
   spec.add_development_dependency "rubocop", "~> 0.76.0"
   spec.add_development_dependency "simplecov", "~> 0.17.1"
-  # fix OpenSSH alg mismatch problem
-  spec.add_development_dependency "net-ssh", "7.2.0"
+
 
   spec.post_install_message = <<-RAINBOW
     Starting from version 3.0.0 `database.charset` option is no longer accepted.
