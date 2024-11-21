@@ -4,7 +4,8 @@ require 'wordmove/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "wordmove"
-  spec.version       = Wordmove::VERSION
+  # spec.version       = Wordmove::VERSION
+  spec.version       = '5.2.2-netssh7'
   spec.authors       = [
     "Stefano Verna", "Ju Liu", "Fabrizio Monti", "Alessandro Fazzi", "Filippo Gangi Dino"
   ]
